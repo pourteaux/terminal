@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Code Poem (Colored + Ultra-Fast Typing)</title>
+  <style>
+    body {
+      background-color: #000;             /* Black background */
+      color: #fff;                        /* White text */
+      font-family: "Courier New", monospace; /* Monospaced font for alignment */
+      margin: 0;
+      padding: 1rem;
+    }
+    #poem {
+      white-space: pre;                  /* Preserve exact spacing/newlines */
+      font-family: "Courier New", monospace;
+      font-size: 16px;                   /* Adjust to taste */
+      line-height: 1.2;                  /* Slight spacing for ASCII readability */
+      overflow-wrap: normal;             /* No word-wrapping if possible */
+      word-wrap: normal;
+    }
+    /* Simple blinking cursor */
+    #cursor {
+      display: inline-block;
+      width: 8px;
+      background-color: #fff;
+      margin-left: 2px;
+      animation: blink 1s step-start infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="poem"></div><div id="cursor"></div>
+
+<script>
+// The code-poem, with minimal HTML <span> tags for coloring.
+// All backslashes in the ASCII art are double-escaped (\\\\).
+
+const codePoem = `<span style="color: #0aff0a;">
+<span style="color: #C792EA;">#include</span> <span style="color: #F78C6C;">&lt;iostream&gt;</span>
+<span style="color: #C792EA;">#include</span> <span style="color: #F78C6C;">&lt;vector&gt;</span>
+<span style="color: #C792EA;">#include</span> <span style="color: #F78C6C;">&lt;string&gt;</span>
+<span style="color: #C792EA;">using</span> <span style="color: #C792EA;">namespace</span> std;
+
+<span style="color: #C792EA;">int</span> main() {
+    <span style="color: #5C6370;">// ┌───────── ASCII ART BANNER ─────────┐</span>
+    <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">R"( 
+░       ░░░░      ░░░  ░░░░  ░░       ░░░        ░░        ░░░      ░░░  ░░░░  ░░  ░░░░  ░
+▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒▒  ▒▒  ▒▒
+▓       ▓▓▓  ▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓       ▓▓▓▓▓▓  ▓▓▓▓▓      ▓▓▓▓  ▓▓▓▓  ▓▓  ▓▓▓▓  ▓▓▓▓    ▓▓▓
+█  ████████  ████  ██  ████  ██  ███  ██████  █████  ████████        ██  ████  ███  ██  ██
+█  █████████      ████      ███  ████  █████  █████        ██  ████  ███      ███  ████  █
+                                                                                    
+                                                                                
+  )"</span> &lt;&lt; endl;
+
+    <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"=== 「我们要forge un nuovo futuro」: break from total control ===\\n\\n"</span> &lt;&lt; endl;
+
+    <span style="color: #5C6370;">// 引入观察者，结合中英意</span>
+    <span style="color: #C792EA;">vector&lt;string&gt;</span> watchers = {<span style="color: #F78C6C;">"眼睛无处不在"</span>, <span style="color: #F78C6C;">"AI_sorveglianza"</span>, <span style="color: #F78C6C;">"global_spider网"</span>};
+    <span style="color: #C792EA;">bool</span> surveillanceActive = <span style="color: #C792EA;">true</span>;
+    <span style="color: #C792EA;">bool</span> buildingNetworkState = <span style="color: #C792EA;">false</span>;
+
+    <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"城市data在监听, we must scappare il controllo."</span> &lt;&lt; endl;
+    <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"如果我们 build una network state, 或许能够寻找 real autonomia."</span> &lt;&lt; endl;
+    <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"请启动暗网 protocol e accendere la speranza 在neon-luce之下."</span> &lt;&lt; endl;
+    <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"在这里 code与意志 si fondono, forging 一个rebellione digitale."</span> &lt;&lt; endl;
+    <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"只有跨越 la sorveglianza, 才能 trovare freedom in this notte oscura."</span> &lt;&lt; endl;
+    <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"让我们 unite il potere di cryptografia 和 guerrilla spirit.\\n\\n"</span> &lt;&lt; endl;
+
+    <span style="color: #5C6370;">// 参考nostr与比特币地址</span>
+    <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"在nostr网络 we exchange info su btc地址 timechain: 3JFjU8MsoQKAFWB8RkCJEwhsG34AzEWmDC."</span> &lt;&lt; endl;
+    <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"我们曾在 Civitas Vaticana 追寻线索, also visited 上海 searching for freedom."</span> &lt;&lt; endl;
+    <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"甚至远赴 ལྷ་ས, 与 東京, e perfino 九龍城寨 per risposte."</span> &lt;&lt; endl;
+    <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"有传闻在Manhattan(10001,10011,10013) we might find un gateway a la vera indipendenza.\\n\\n"</span> &lt;&lt; endl;
+
+    <span style="color: #C792EA;">while</span> (surveillanceActive) {
+        <span style="color: #5C6370;">// 动态添加“观察者”，含有"pourteaux"做纪念</span>
+        watchers.push_back(<span style="color: #F78C6C;">"drone_sentinella_"</span> + to_string(watchers.size()) + <span style="color: #F78C6C;">"_pourteaux"</span>);
+        <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"监控扩张, watchers crescono, e noi躲藏 in stealth-protocol."</span> &lt;&lt; endl;
+
+        <span style="color: #5C6370;">// 如果还没建立network state，就开始构建</span>
+        <span style="color: #C792EA;">if</span> (!buildingNetworkState) {
+            buildingNetworkState = <span style="color: #C792EA;">true</span>;
+            <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"现在开始建造 nostro rifugio, 同时远离 la polizia数据化."</span> &lt;&lt; endl;
+        }
+
+        <span style="color: #5C6370;">// 当观察者多到某个地步，我们便能伺机break</span>
+        <span style="color: #C792EA;">if</span> (watchers.size() &gt; 8.1e9) {
+            surveillanceActive = <span style="color: #C792EA;">false</span>;
+            <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"Watchers数目已达极限, 我们 seize the nexus e fuggire."</span> &lt;&lt; endl;
+        }
+    }
+
+    <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"\\n在破碎的neon反光里, abbiamo fondato un Network State di自由."</span> &lt;&lt; endl;
+    <span style="color: #82AAFF;">cout</span> &lt;&lt; <span style="color: #F78C6C;">"return 0; // 但我们真的会回归, or do we remain nel codice?"</span> &lt;&lt; endl;
+
+    <span style="color: #C792EA;">return</span> 0;
+}
+</span>
+`;
+
+// We'll type the code at 1 ms per character (extremely fast)
+let i = 0;
+const speed = 1;  // ms per character
+
+function typeChar() {
+  document.getElementById('poem').innerHTML = codePoem.slice(0, i);
+  i++;
+  if (i <= codePoem.length) {
+    setTimeout(typeChar, speed);
+  }
+}
+
+// Start the typing
+typeChar();
+</script>
+
+</body>
+</html>
